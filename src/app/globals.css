@@ -1,0 +1,441 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font mappings */
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space-grotesk);
+  --font-mono: var(--font-jetbrains-mono);
+
+  /* Color mappings */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border);
+  --color-muted-foreground: var(--muted-foreground);
+
+  /* Custom Animations */
+  --animate-text-reveal: text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+
+  @keyframes text-reveal {
+    0% {
+      transform: translate(0, 100%);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+/* Default / Base Variables */
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
+}
+
+/* 1. Midnight Tech */
+[data-theme='midnight-tech'] {
+  --background: #020617;
+  /* Deepest Slate */
+  --surface: #0f172a;
+  /* Slate 900 */
+  --foreground: #f8fafc;
+  /* Slate 50 (Brighter text) */
+  --primary: #38BDF8;
+  /* Sky 400 */
+  --secondary: #1e293b;
+  /* Slate 800 - Better Card Contrast */
+  --border: rgba(56, 189, 248, 0.1);
+  --muted-foreground: #94a3b8;
+}
+
+/* 2. Cyber Blue */
+[data-theme='cyber-blue'] {
+  --background: #000000;
+  /* True Black for Cyber */
+  --surface: #0a0a0a;
+  /* Near Black */
+  --foreground: #F9FAFB;
+  --primary: #3b82f6;
+  --secondary: #171717;
+  --border: rgba(59, 130, 246, 0.2);
+  --muted-foreground: #9ca3af;
+}
+
+/* 3. Neo Green Hacker */
+[data-theme='neo-green'] {
+  --background: #020617;
+  --surface: #052E16;
+  --foreground: #ECFDF5;
+  --primary: #22C55E;
+  --secondary: #052E16;
+  --border: rgba(34, 197, 94, 0.2);
+  --muted-foreground: #a7f3d0;
+}
+
+/* 4. Royal Purple */
+[data-theme='royal-purple'] {
+  --background: #1E1B4B;
+  --surface: #312E81;
+  --foreground: #EDE9FE;
+  --primary: #A78BFA;
+  --secondary: #312E81;
+  --border: rgba(167, 139, 250, 0.2);
+  --muted-foreground: #c4b5fd;
+}
+
+/* 5. Sunset Developer */
+[data-theme='sunset-developer'] {
+  --background: #1C1917;
+  --surface: #292524;
+  --foreground: #FAFAF9;
+  --primary: #FB7185;
+  --secondary: #292524;
+  --border: rgba(251, 113, 133, 0.2);
+  --muted-foreground: #fda4af;
+}
+
+/* 6. Minimal White Pro (Fixed: Too Light) */
+[data-theme='minimal-white'] {
+  --background: #f8fafc;
+  /* Slate 50 (Not pure white) */
+  --surface: #ffffff;
+  /* White Cards */
+  --foreground: #0f172a;
+  /* Slate 900 */
+  --primary: #4F46E5;
+  /* Indigo 600 */
+  --secondary: #e2e8f0;
+  /* Slate 200 */
+  --border: rgba(79, 70, 229, 0.1);
+  --muted-foreground: #475569;
+}
+
+/* 7. Forest Calm */
+[data-theme='forest-calm'] {
+  --background: #022C22;
+  --surface: #064E3B;
+  --foreground: #ECFDF5;
+  --primary: #34D399;
+  --secondary: #064E3B;
+  --border: rgba(52, 211, 153, 0.2);
+}
+
+/* 8. Lava Contrast */
+[data-theme='lava-contrast'] {
+  --background: #0F0F0F;
+  --surface: #1C1C1C;
+  --foreground: #EDEDED;
+  --primary: #F97316;
+  --secondary: #1C1C1C;
+  --border: rgba(249, 115, 22, 0.2);
+  --muted-foreground: #a3a3a3;
+}
+
+/* 9. Ocean Depth */
+[data-theme='ocean-depth'] {
+  --background: #030712;
+  --surface: #0E7490;
+  --foreground: #ECFEFF;
+  --primary: #22D3EE;
+  --secondary: #0E7490;
+  --border: rgba(34, 211, 238, 0.2);
+  --muted-foreground: #a5f3fc;
+}
+
+/* 10. Gold Prestige */
+[data-theme='gold-prestige'] {
+  --background: #111827;
+  --surface: #1F2937;
+  --foreground: #F9FAFB;
+  --primary: #FACC15;
+  --secondary: #1F2937;
+  --border: rgba(250, 204, 21, 0.2);
+  --muted-foreground: #9ca3af;
+}
+
+/* 11. Soft Beige Modern */
+[data-theme='soft-beige'] {
+  --background: #F5F5F4;
+  --surface: #E7E5E4;
+  --foreground: #1C1917;
+  --primary: #2563EB;
+  --secondary: #E7E5E4;
+  --border: rgba(37, 99, 235, 0.15);
+  --muted-foreground: #57534e;
+}
+
+/* 12. Crimson Night */
+[data-theme='crimson-night'] {
+  --background: #0A0A0A;
+  --surface: #1F1F1F;
+  --foreground: #F5F5F5;
+  --primary: #DC2626;
+  --secondary: #1F1F1F;
+  --border: rgba(220, 38, 38, 0.2);
+  --muted-foreground: #a1a1aa;
+}
+
+/* 13. Indigo Glass */
+[data-theme='indigo-glass'] {
+  --background: #EEF2FF;
+  --surface: #C7D2FE;
+  --foreground: #1E1B4B;
+  --primary: #4338CA;
+  --secondary: #C7D2FE;
+  --border: rgba(67, 56, 202, 0.15);
+  --muted-foreground: #4338ca;
+}
+
+/* 14. Terminal Classic */
+[data-theme='terminal-classic'] {
+  --background: #000000;
+  --surface: #020617;
+  --foreground: #A7F3D0;
+  --primary: #10B981;
+  --secondary: #020617;
+  --border: rgba(16, 185, 129, 0.3);
+  --muted-foreground: #059669;
+}
+
+/* 15. Earth Tone Pro */
+[data-theme='earth-tone'] {
+  --background: #1F2937;
+  --surface: #374151;
+  --foreground: #F9FAFB;
+  --primary: #D97706;
+  --secondary: #374151;
+  --border: rgba(217, 119, 6, 0.2);
+  --muted-foreground: #d1d5db;
+}
+
+/* 16. Pastel UI */
+[data-theme='pastel-ui'] {
+  --background: #FDF2F8;
+  --surface: #FCE7F3;
+  --foreground: #4A044E;
+  --primary: #EC4899;
+  --secondary: #FCE7F3;
+  --border: rgba(236, 72, 153, 0.2);
+  --muted-foreground: #701a75;
+}
+
+/* 17. Steel Gray */
+[data-theme='steel-gray'] {
+  --background: #18181B;
+  --surface: #27272A;
+  --foreground: #E4E4E7;
+  --primary: #60A5FA;
+  --secondary: #27272A;
+  --border: rgba(96, 165, 250, 0.2);
+  --muted-foreground: #a1a1aa;
+}
+
+/* 18. Arctic Clean */
+[data-theme='arctic-clean'] {
+  --background: #F8FAFC;
+  --surface: #E2E8F0;
+  --foreground: #020617;
+  --primary: #0EA5E9;
+  --secondary: #E2E8F0;
+  --border: rgba(14, 165, 233, 0.2);
+  --muted-foreground: #475569;
+}
+
+/* 19. Deep Teal */
+[data-theme='deep-teal'] {
+  --background: #042F2E;
+  --surface: #134E4A;
+  --foreground: #ECFEFF;
+  --primary: #2DD4BF;
+  --secondary: #134E4A;
+  --border: rgba(45, 212, 191, 0.2);
+  --muted-foreground: #99f6e4;
+}
+
+/* 20. Mocha Luxe */
+[data-theme='mocha-luxe'] {
+  --background: #2A1E1A;
+  --surface: #3F2E2A;
+  --foreground: #F5EDEB;
+  --primary: #FB923C;
+  --secondary: #3F2E2A;
+  --border: rgba(251, 146, 60, 0.2);
+  --muted-foreground: #d6d3d1;
+}
+
+/* 21. Neon Violet */
+[data-theme='neon-violet'] {
+  --background: #030712;
+  --surface: #1E1B4B;
+  --foreground: #E0E7FF;
+  --primary: #C084FC;
+  --secondary: #1E1B4B;
+  --border: rgba(192, 132, 252, 0.3);
+  --muted-foreground: #c7d2fe;
+}
+
+/* 22. Blue-Gray Corporate */
+[data-theme='blue-gray'] {
+  --background: #0F172A;
+  --surface: #334155;
+  --foreground: #F1F5F9;
+  --primary: #38BDF8;
+  --secondary: #334155;
+  --border: rgba(56, 189, 248, 0.2);
+  --muted-foreground: #94a3b8;
+}
+
+/* === NEW LIGHT THEMES === */
+
+/* 23. Solar Flare (Light) */
+[data-theme='solar-flare'] {
+  --background: #FFF7ED;
+  /* Orange-50 */
+  --surface: #FFEDD5;
+  /* Orange-100 */
+  --foreground: #431407;
+  /* Orange-950 */
+  --primary: #F97316;
+  /* Orange-500 */
+  --secondary: #FED7AA;
+  /* Orange-200 */
+  --border: rgba(249, 115, 22, 0.2);
+  --muted-foreground: #a3a3a3;
+}
+
+/* 24. Emerald City (Light) */
+[data-theme='emerald-city'] {
+  --background: #F0FDF4;
+  --surface: #DCFCE7;
+  --foreground: #022C22;
+  --primary: #10B981;
+  --secondary: #BBF7D0;
+  --border: rgba(16, 185, 129, 0.2);
+  --muted-foreground: #064e3b;
+}
+
+/* 25. Royal Day (Light) */
+[data-theme='royal-day'] {
+  --background: #FAF5FF;
+  --surface: #F3E8FF;
+  --foreground: #3B0764;
+  --primary: #9333EA;
+  --secondary: #E9D5FF;
+  --border: rgba(147, 51, 234, 0.2);
+  --muted-foreground: #581c87;
+}
+
+/* 26. Ocean Breeze (Light) */
+[data-theme='ocean-breeze'] {
+  --background: #ECFEFF;
+  --surface: #CFFAFE;
+  --foreground: #083344;
+  --primary: #06B6D4;
+  --secondary: #A5F3FC;
+  --border: rgba(6, 182, 212, 0.2);
+  --muted-foreground: #164e63;
+}
+
+/* 27. Rose Petal (Light) */
+[data-theme='rose-petal'] {
+  --background: #FFF1F2;
+  --surface: #FFE4E6;
+  --foreground: #881337;
+  --primary: #E11D48;
+  --secondary: #FECDD3;
+  --border: rgba(225, 29, 72, 0.2);
+  --muted-foreground: #881337;
+}
+
+/* 28. Slate Standard (Light) */
+[data-theme='slate-standard'] {
+  --background: #F8FAFC;
+  --surface: #E2E8F0;
+  --foreground: #0F172A;
+  --primary: #64748B;
+  --secondary: #CBD5E1;
+  --border: rgba(100, 116, 139, 0.2);
+  --muted-foreground: #334155;
+}
+
+/* 29. Golden Hour (Light) */
+[data-theme='golden-hour'] {
+  --background: #FEFCE8;
+  --surface: #FEF08A;
+  --foreground: #422006;
+  --primary: #EAB308;
+  --secondary: #FDE047;
+  --border: rgba(234, 179, 8, 0.2);
+  --muted-foreground: #713f12;
+}
+
+/* 30. Lavender Mist (Light) */
+[data-theme='lavender-mist'] {
+  --background: #FDF4FF;
+  --surface: #FAE8FF;
+  --foreground: #4A044E;
+  --primary: #D946EF;
+  --secondary: #F0ABFC;
+  --border: rgba(217, 70, 239, 0.2);
+  --muted-foreground: #701a75;
+}
+
+/* 31. Sky Blue (Light) */
+[data-theme='sky-blue'] {
+  --background: #F0F9FF;
+  --surface: #E0F2FE;
+  --foreground: #0C4A6E;
+  --primary: #0EA5E9;
+  --secondary: #BAE6FD;
+  --border: rgba(14, 165, 233, 0.2);
+  --muted-foreground: #475569;
+}
+
+/* 32. Corporate Clean (Light) */
+[data-theme='corporate-clean'] {
+  --background: #FFFFFF;
+  --surface: #F1F5F9;
+  --foreground: #0F172A;
+  --primary: #334155;
+  --secondary: #E2E8F0;
+  --border: rgba(51, 65, 85, 0.2);
+  --muted-foreground: #334155;
+}
+
+/* 33. Coffee Morning (Light) */
+[data-theme='coffee-morning'] {
+  --background: #F5F5F4;
+  --surface: #E7E5E4;
+  --foreground: #44403C;
+  --primary: #A8A29E;
+  --secondary: #D6D3D1;
+  --border: rgba(168, 162, 158, 0.2);
+  --muted-foreground: #44403c;
+}
+
+/* 34. Mint Fresh (Light) */
+[data-theme='mint-fresh'] {
+  --background: #F0FDFA;
+  --surface: #CCFBF1;
+  --foreground: #042F2E;
+  --primary: #14B8A6;
+  --secondary: #99F6E4;
+  --border: rgba(20, 184, 166, 0.2);
+  --muted-foreground: #065f46;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
