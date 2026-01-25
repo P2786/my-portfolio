@@ -22,7 +22,7 @@ export const ParticlesBackground = () => {
                 value: "transparent",
             },
         },
-        fpsLimit: 120,
+        fpsLimit: 999,
         interactivity: {
             events: {
                 onHover: {
@@ -62,7 +62,7 @@ export const ParticlesBackground = () => {
                 density: {
                     enable: true,
                 },
-                value: 100, // Adjust density
+                value: 50, // Reduced from 100 for better mobile 120fps performance
             },
             opacity: {
                 value: 0.1, // Subtle

@@ -55,7 +55,7 @@ function FloatingShape() {
 export function Scene3D() {
     return (
         <div className="absolute inset-0 -z-20 opacity-40 pointer-events-none">
-            <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+            <Canvas camera={{ position: [0, 0, 5], fov: 45 }} dpr={[1, 2]} performance={{ min: 0.5 }} frameloop="always">
                 <ambientLight intensity={0.5} />
                 <directionalLight position={[10, 10, 5]} intensity={1} />
                 <FloatingShape />
