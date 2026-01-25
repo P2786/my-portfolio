@@ -2,5 +2,6 @@
   command = "npm run build"
   publish = ".next"
 
+# Netlify automatically detects Next.js now, so explicit plugin is often optional but kept for safety.
 [[plugins]]
   package = "@netlify/plugin-nextjs"
