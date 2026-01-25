@@ -106,7 +106,7 @@ export function ThemeSwitcher() {
                         initial="hidden"
                         animate="visible"
                         exit="exit"
-                        className="absolute right-0 mt-2 w-72 p-4 bg-surface/95 backdrop-blur-xl border border-border rounded-xl shadow-2xl z-50 flex flex-col gap-4 max-h-[600px]"
+                        className="fixed top-24 left-1/2 -translate-x-1/2 w-[90vw] max-w-sm p-4 bg-surface/95 backdrop-blur-xl border border-border rounded-xl shadow-2xl z-50 flex flex-col gap-4 max-h-[70vh] overflow-hidden md:absolute md:top-full md:right-0 md:left-auto md:translate-x-0 md:w-80 md:max-h-[600px] md:mt-2"
                         onMouseLeave={() => setIsOpen(false)}
                     >
                         {/* Filter Filters */}
@@ -133,8 +133,8 @@ export function ThemeSwitcher() {
                                     key={t.id}
                                     onClick={() => setTheme(t.id)}
                                     className={`relative flex items-center gap-3 p-2 rounded-full text-sm font-medium transition-all duration-200 text-left w-full group ${theme === t.id
-                                            ? "bg-primary/20 text-primary ring-1 ring-primary/50 translate-x-1"
-                                            : "text-gray-500 dark:text-gray-400 hover:text-foreground hover:bg-white/10 hover:pl-3"
+                                        ? "bg-primary/20 text-primary ring-1 ring-primary/50 translate-x-1"
+                                        : "text-gray-500 dark:text-gray-400 hover:text-foreground hover:bg-white/10 hover:pl-3"
                                         }`}
                                 >
                                     <span

@@ -45,13 +45,23 @@ export default function CustomCursor() {
 
         const handleMouseOver = (e: MouseEvent) => {
             const target = e.target as HTMLElement;
-            const isClickable = !!(
+
+            // Check specific tags first (fastest)
+            let isClickable = !!(
                 target.tagName === "BUTTON" ||
                 target.tagName === "A" ||
                 target.closest("a") ||
                 target.closest("button") ||
-                target.getAttribute("role") === "button"
+                target.closest("[role='button']")
             );
+
+            // Fallback: Check computed style (slower but covers all cases like divs with click handlers)
+            if (!isClickable && target) {
+                const style = window.getComputedStyle(target);
+                if (style.cursor === "pointer") {
+                    isClickable = true;
+                }
+            }
 
             setIsHovering(isClickable);
         };

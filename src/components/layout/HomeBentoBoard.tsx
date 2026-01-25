@@ -36,7 +36,7 @@ export function BentoCard({ children, className, span = "col-span-1", delay = 0 
 export function HomeBentoBoard({ children }: { children: React.ReactNode }) {
     return (
         <div className="relative z-10 w-full max-w-[1600px] mx-auto px-4 md:px-10 py-24">
-            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6 auto-rows-[120px]">
+            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6 auto-rows-auto md:auto-rows-[120px]">
                 {children}
             </div>
         </div>

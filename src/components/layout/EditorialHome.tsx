@@ -71,17 +71,14 @@ export function EditorialHome() {
                 </BentoCard>
 
                 {/* 2. Main Headline Card */}
-                <BentoCard span="md:col-span-12 lg:col-span-5 lg:row-span-5" className="justify-end gap-6 overflow-visible">
-                    <div className="absolute top-8 left-8">
-                        <Sparkles className="text-primary opacity-50" size={32} />
-                    </div>
+                <BentoCard span="md:col-span-12 lg:col-span-5 lg:row-span-5" className="justify-between items-start gap-6 overflow-visible">
                     <h1 className="text-5xl md:text-6xl font-heading font-bold tracking-tight leading-[1.1]">
                         <SplitText delay={0.2}>CS Student &</SplitText>
                         <span className="text-primary italic"> Frontend </span>
                         <SplitText delay={0.4}>Developer.</SplitText>
                     </h1>
-                    <p className="text-lg text-muted-foreground max-w-sm leading-relaxed">
-                        Passionate about building clean, accessible, and performant web experiences while mastering the fundamentals of computer science.
+                    <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
+                        I am a Computer Science student driven by a passion for creating unique and functional digital experiences. My journey is defined by a relentless curiosity to understand how things work and a desire to build solutions that not only solve problems but also delight users. I focus on crafting clean, accessible, and high-performance web applications, bridging the gap between innovative design and robust engineering to turn complex ideas into intuitive, interactive realities.
                     </p>
                     <div className="flex items-center gap-4 pt-4">
                         <Link href="/contact">
@@ -99,7 +96,7 @@ export function EditorialHome() {
                 </BentoCard>
 
                 {/* 3. Profile Portrait Card */}
-                <BentoCard span="md:col-span-12 lg:col-span-3 lg:row-span-5" className="p-0 border-none bg-transparent hover:scale-105 transition-transform">
+                <BentoCard span="md:col-span-12 lg:col-span-3 lg:row-span-5" className="p-0 border-none bg-transparent hover:scale-105 transition-transform h-[500px] md:h-full">
                     <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden border border-border/50">
                         <ParallaxImage
                             src="/profile-v2.png"
@@ -159,7 +156,7 @@ export function EditorialHome() {
                 </BentoCard>
 
                 {/* 6. Big Contact / CTA Card */}
-                <BentoCard span="md:col-span-12 lg:col-span-3 lg:row-span-3" className="p-0 overflow-hidden group/cta">
+                <BentoCard span="md:col-span-12 lg:col-span-3 lg:row-span-3" className="p-0 overflow-hidden group/cta min-h-[300px] md:min-h-0">
                     <Link href="/contact" className="w-full h-full p-10 bg-primary hover:bg-primary/90 flex flex-col justify-center transition-colors">
                         <Mail className="text-white transform group-hover/cta:-rotate-12 transition-transform" size={48} />
                         <h2 className="text-4xl font-heading font-bold text-white mt-6 mb-2">Contact <span className="italic">me</span></h2>
@@ -168,12 +165,12 @@ export function EditorialHome() {
                 </BentoCard>
 
                 {/* 7. Footer / Socials Card */}
-                <BentoCard span="md:col-span-12 lg:col-span-4 lg:row-span-2" className="flex-row justify-around h-auto">
-                    <a href="https://www.instagram.com/abbas_412_/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic">Instagram</a>
-                    <div className="w-px h-6 bg-border/50" />
-                    <a href="https://www.linkedin.com/in/abbasxcode/?skipRedirect=true" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic">Linked-In</a>
-                    <div className="w-px h-6 bg-border/50" />
-                    <a href="https://github.com/Abbas192006" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic">GitHub</a>
+                <BentoCard span="md:col-span-12 lg:col-span-4 lg:row-span-2" className="flex-row flex-wrap justify-center md:justify-around gap-4 h-auto py-6">
+                    <a href="https://www.instagram.com/abbas_412_/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic whitespace-nowrap">Instagram</a>
+                    <div className="hidden md:block w-px h-6 bg-border/50" />
+                    <a href="https://www.linkedin.com/in/abbasxcode/?skipRedirect=true" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic whitespace-nowrap">LinkedIn</a>
+                    <div className="hidden md:block w-px h-6 bg-border/50" />
+                    <a href="https://github.com/Abbas192006" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic whitespace-nowrap">GitHub</a>
                 </BentoCard>
 
             </HomeBentoBoard>

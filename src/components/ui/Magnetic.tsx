@@ -38,7 +38,7 @@ export function Magnetic({ children, strength = 0.5 }: MagneticProps) {
             ref={ref}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="flex items-center justify-center"
+            className="inline-flex items-center justify-center relative"
         >
             <motion.div
                 style={{ x: smoothX, y: smoothY }}
