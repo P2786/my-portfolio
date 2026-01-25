@@ -78,7 +78,7 @@ export function EditorialHome() {
                         <SplitText delay={0.4}>Developer.</SplitText>
                     </h1>
                     <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-                        I am a Computer Science student driven by a passion for creating unique and functional digital experiences. My journey is defined by a relentless curiosity to understand how things work and a desire to build solutions that not only solve problems but also delight users. I focus on crafting clean, accessible, and high-performance web applications, bridging the gap between innovative design and robust engineering to turn complex ideas into intuitive, interactive realities.
+                        I am a Computer Science student driven by a passion for creating unique and functional digital experiences. My journey is defined by a relentless curiosity to understand how things work and a desire to build solutions that delight users. I focus on crafting accessible, high-performance web applications, turning complex ideas into intuitive, interactive realities.
                     </p>
                     <div className="flex items-center gap-4 pt-4">
                         <Link href="/contact">
