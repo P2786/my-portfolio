@@ -13,6 +13,14 @@ A premium, interactive developer portfolio built with Next.js, Tailwind CSS, Fra
   - 3D Floating Geometry (React Three Fiber)
   - Particle Background (tsParticles)
   - Custom fluid cursor
+- **Responsive Design**:
+  - Fully optimized for Mobile, Tablet, and Desktop
+  - Custom Mobile Navigation Menu
+  - Adaptive Grid Layouts (Bento Board)
+- **Advanced Theme System**:
+  - 30+ Custom Themes (Light & Dark modes)
+  - Responsive Theme Switcher
+  - Persistent theme preferences
 - **Modern UI/UX**:
   - Dark Mode aesthetic (Obsidian/Neon)
   - Glassmorphism effects
@@ -22,7 +30,7 @@ A premium, interactive developer portfolio built with Next.js, Tailwind CSS, Fra
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 15 (App Router)
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS v4
 - **Motion**: Framer Motion, GSAP, Lenis
 - **3D**: Three.js, React Three Fiber, Drei
 - **Particles**: tsparticles
