@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { Mail, Send } from "lucide-react";
@@ -9,6 +10,40 @@ interface ContactProps {
 }
 
 export function Contact({ isEmbedded = false }: ContactProps) {
+    const [status, setStatus] = React.useState<"idle" | "submitting" | "success" | "error">("idle");
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setStatus("submitting");
+
+        const formData = new FormData(e.currentTarget);
+        // TODO: Replace with your actual Web3Forms Access Key
+        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setStatus("success");
+                (e.target as HTMLFormElement).reset();
+                setTimeout(() => setStatus("idle"), 3000);
+            } else {
+                console.error("Error:", data);
+                setStatus("error");
+                setTimeout(() => setStatus("idle"), 3000);
+            }
+        } catch (error) {
+            console.error("Submission failed", error);
+            setStatus("error");
+            setTimeout(() => setStatus("idle"), 3000);
+        }
+    };
+
     const content = (
         <div className={isEmbedded ? "w-full text-left" : "max-w-2xl mx-auto flex flex-col items-center text-center"}>
 
@@ -27,11 +62,13 @@ export function Contact({ isEmbedded = false }: ContactProps) {
             )}
 
             <Reveal width="100%">
-                <form className="w-full space-y-4">
+                <form onSubmit={handleSubmit} className="w-full space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="group relative">
                             <input
                                 type="text"
+                                name="name"
+                                required
                                 placeholder="Name"
                                 className="w-full bg-surface/50 border border-border rounded-2xl px-6 py-4 focus:outline-none focus:border-primary transition-all duration-300"
                             />
@@ -39,6 +76,8 @@ export function Contact({ isEmbedded = false }: ContactProps) {
                         <div className="group relative">
                             <input
                                 type="email"
+                                name="email"
+                                required
                                 placeholder="Email"
                                 className="w-full bg-surface/50 border border-border rounded-2xl px-6 py-4 focus:outline-none focus:border-primary transition-all duration-300"
                             />
@@ -46,14 +85,20 @@ export function Contact({ isEmbedded = false }: ContactProps) {
                     </div>
                     <div className="group relative">
                         <textarea
+                            name="message"
+                            required
                             placeholder="Message"
                             rows={4}
                             className="w-full bg-surface/50 border border-border rounded-2xl px-6 py-4 focus:outline-none focus:border-primary transition-all duration-300 resize-none"
                         />
                     </div>
 
-                    <Button className="w-full" size="lg">
-                        Send Message
+                    <Button 
+                        disabled={status === "submitting" || status === "success"}
+                        className="w-full" 
+                        size="lg"
+                    >
+                        {status === "submitting" ? "Sending..." : status === "success" ? "Message Sent!" : "Send Message"}
                         <Send className="ml-2 w-4 h-4" />
                     </Button>
                 </form>
