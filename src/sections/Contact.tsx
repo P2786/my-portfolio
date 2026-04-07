@@ -18,7 +18,7 @@ export function Contact({ isEmbedded = false }: ContactProps) {
 
         const formData = new FormData(e.currentTarget);
         // TODO: Replace with your actual Web3Forms Access Key
-        formData.append("access_key", "34ea9354-c155-43a0-9890-cdfc3fc6d90a");
+        formData.append("access_key", "e99a4458-f9c5-4f23-90bf-566a0310a35c");
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
