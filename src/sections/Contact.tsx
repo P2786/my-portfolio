@@ -12,37 +12,45 @@ interface ContactProps {
 export function Contact({ isEmbedded = false }: ContactProps) {
     const [status, setStatus] = React.useState<"idle" | "submitting" | "success" | "error">("idle");
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setStatus("submitting");
+   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("submitting");
 
-        const formData = new FormData(e.currentTarget);
-        // TODO: Replace with your actual Web3Forms Access Key
-        formData.append("access_key", "e99a4458-f9c5-4f23-90bf-566a0310a35c");
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
-        try {
-            const response = await fetch("https://api.web3forms.com/submit", {
-                method: "POST",
-                body: formData
-            });
+    // ✅ Required
+    formData.append("access_key", "a2edd26d-59b3-4a6b-a668-9c09cec7127d");
 
-            const data = await response.json();
+    // ✅ Email setup
+    formData.append("from_name", "Pramit Portfolio");
+    formData.append("subject", "🚀 New Message from Portfolio");
+    formData.append("to_email", "pramit.savaliya2786@gmail.com");
 
-            if (data.success) {
-                setStatus("success");
-                (e.target as HTMLFormElement).reset();
-                setTimeout(() => setStatus("idle"), 3000);
-            } else {
-                console.error("Error:", data);
-                setStatus("error");
-                setTimeout(() => setStatus("idle"), 3000);
-            }
-        } catch (error) {
-            console.error("Submission failed", error);
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setStatus("success");
+            form.reset();
+            setTimeout(() => setStatus("idle"), 3000);
+        } else {
+            console.error("API Error:", data);
             setStatus("error");
             setTimeout(() => setStatus("idle"), 3000);
         }
-    };
+
+    } catch (error) {
+        console.error("Network Error:", error);
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 3000);
+    }
+};
 
     const content = (
         <div className={isEmbedded ? "w-full text-left" : "max-w-2xl mx-auto flex flex-col items-center text-center"}>
@@ -63,6 +71,7 @@ export function Contact({ isEmbedded = false }: ContactProps) {
 
             <Reveal width="100%">
                 <form onSubmit={handleSubmit} className="w-full space-y-4">
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="group relative">
                             <input

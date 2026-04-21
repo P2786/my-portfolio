@@ -25,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dev Portfolio",
+  title: "Pramit Savaliya - Developer Portfolio",
   description: "High-end animated developer portfolio",
 };
 

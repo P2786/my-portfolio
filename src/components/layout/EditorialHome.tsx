@@ -9,20 +9,21 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight, Download, Github, Mail, Sparkles, MapPin, Globe, Briefcase, GraduationCap } from "lucide-react";
 import { TechStackSphere } from "@/components/ui/TechStackSphere";
 import { ParallaxImage } from "@/components/ui/ParallaxImage";
+import { Instagram, Linkedin } from "lucide-react";
 import { AboutStats } from "@/components/ui/AboutStats";
 import { Reveal } from "@/components/ui/Reveal";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const featuredProjects = [
-    { title: "Student Portal Designer", category: "UI/UX & Figma", link: "/projects" },
-    { title: "Social Media App (OOP)", category: "C++ Backend", link: "/projects" },
-    { title: "Holographic Portfolio", category: "3D Web Dev", link: "/projects" },
-    { title: "Student Portal Developer", category: "HTML/CSS/JS", link: "/projects" },
-    { title: "DSA Logic Visualizer", category: "React & Algorithms", link: "/projects" },
-    { title: "Cybersecurity Audit", category: "Network Security", link: "/projects" },
-    { title: "Global Logistics API", category: "Backend Hub", link: "/projects" },
-    { title: "VR Education Hub", category: "Immersive Tech", link: "/projects" },
+    { title: "ChatMitra - Real-Time Chat App", category: "PHP & MySQL", link: "/projects" },
+    { title: "Online Voting System", category: "Full Stack Web", link: "/projects" },
+    { title: "PrepPilot AI - Interview Platform", category: "AI & Node.js", link: "/projects" },
+    { title: "InvisiCam - Hidden Camera Detector", category: "Android (Java)", link: "/projects" },
+    { title: "PramitVote+ Polling App", category: "Web App", link: "/projects" },
+    { title: "Pritify - Spotify Clone", category: "Music Streaming UI", link: "/projects" },
+    { title: "PramitPicx - Photo Editor", category: "JavaScript App", link: "/projects" },
+    { title: "Restaurant Booking System", category: "PHP & Database", link: "/projects" },
 ];
 
 export function EditorialHome() {
@@ -38,7 +39,7 @@ export function EditorialHome() {
 
                 {/* 1. Brand/Nav Card */}
                 <BentoCard span="md:col-span-12 lg:col-span-8 lg:row-span-1" className="flex-row justify-between items-center py-4 px-10 h-auto">
-                    <span className="text-2xl font-heading font-bold tracking-tighter italic">Muhammad Abbas</span>
+                    <span className="text-2xl font-heading font-bold tracking-tighter italic">Pramit Savaliya</span>
                     <nav className="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-muted-foreground">
                         <Link href="/about" className="hover:text-primary transition-colors">About</Link>
                         <Link href="/projects" className="hover:text-primary transition-colors">Projects</Link>
@@ -50,13 +51,13 @@ export function EditorialHome() {
                 <BentoCard span="md:col-span-12 lg:col-span-4 lg:row-span-2" className="h-full">
                     <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-4 text-sm font-medium text-primary">
-                            <MapPin size={16} /> <span>Asia, Pakistan, Lahore</span>
+                            <MapPin size={16} /> <span>India, Gujarat, Surat</span>
                             <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse ml-auto" />
                         </div>
                         <div className="space-y-1.5 pl-8">
                             <div className="flex items-center gap-2 text-xs text-muted-foreground font-medium italic">
                                 <GraduationCap size={12} className="text-primary/70" />
-                                <span>Status: Studying BSCS at UMT</span>
+                                <span>Status: Studying B.C.A at UTU</span>
                             </div>
                             <div className="flex items-center gap-2 text-xs text-muted-foreground font-medium italic">
                                 <Briefcase size={12} className="text-primary/70" />
@@ -74,7 +75,7 @@ export function EditorialHome() {
                 <BentoCard span="md:col-span-12 lg:col-span-5 lg:row-span-5" className="justify-between items-start gap-6 overflow-visible">
                     <h1 className="text-5xl md:text-6xl font-heading font-bold tracking-tight leading-[1.1]">
                         <SplitText delay={0.2}>CS Student &</SplitText>
-                        <span className="text-primary italic"> Frontend </span>
+                        <span className="text-primary italic"> Full-Stack </span>
                         <SplitText delay={0.4}>Developer.</SplitText>
                     </h1>
                     <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
@@ -87,7 +88,7 @@ export function EditorialHome() {
                                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                             </Button>
                         </Link>
-                        <a href="https://github.com/Abbas192006" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/P2786" target="_blank" rel="noopener noreferrer">
                             <Button variant="outline" className="w-[60px] h-[60px] p-0 flex items-center justify-center">
                                 <Github size={20} />
                             </Button>
@@ -105,8 +106,8 @@ export function EditorialHome() {
                             speed={0.15}
                         />
                         <div className="absolute bottom-6 left-6 right-6 p-4 bg-surface/80 backdrop-blur-md rounded-2xl border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Founder / Developer</p>
-                            <p className="text-sm font-medium">Muhammad Abbas</p>
+                            <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Full-Stack Web Developer</p>
+                            <p className="text-sm font-medium">Pramit Savaliya</p>
                         </div>
                     </div>
                 </BentoCard>
@@ -144,7 +145,7 @@ export function EditorialHome() {
                     </p>
                     <div className="flex gap-8 items-center pt-2">
                         <div>
-                            <p className="text-3xl font-heading font-bold text-primary">BS</p>
+                            <p className="text-3xl font-heading font-bold text-primary">B.C.A</p>
                             <p className="text-[10px] uppercase tracking-widest text-muted-foreground font-bold">CS Student</p>
                         </div>
                         <div className="h-10 w-px bg-border/50" />
@@ -160,18 +161,45 @@ export function EditorialHome() {
                     <Link href="/contact" className="w-full h-full p-10 bg-primary hover:bg-primary/90 flex flex-col justify-center transition-colors">
                         <Mail className="text-white transform group-hover/cta:-rotate-12 transition-transform" size={48} />
                         <h2 className="text-4xl font-heading font-bold text-white mt-6 mb-2">Contact <span className="italic">me</span></h2>
-                        <p className="text-white/80 text-sm font-medium">aliabbas3118@gmail.com</p>
+                        <p className="text-white/80 text-sm font-medium">pramit.savaliya2786@gmail.com</p>
                     </Link>
                 </BentoCard>
 
                 {/* 7. Footer / Socials Card */}
-                <BentoCard span="md:col-span-12 lg:col-span-4 lg:row-span-2" className="flex-row flex-wrap justify-center md:justify-around gap-4 h-auto py-6">
-                    <a href="https://www.instagram.com/abbas_412_/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic whitespace-nowrap">Instagram</a>
-                    <div className="hidden md:block w-px h-6 bg-border/50" />
-                    <a href="https://www.linkedin.com/in/abbasxcode/?skipRedirect=true" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic whitespace-nowrap">LinkedIn</a>
-                    <div className="hidden md:block w-px h-6 bg-border/50" />
-                    <a href="https://github.com/Abbas192006" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic whitespace-nowrap">GitHub</a>
-                </BentoCard>
+               <BentoCard span="md:col-span-12 lg:col-span-4 lg:row-span-2" className="flex-row flex-wrap justify-center md:justify-around gap-4 h-auto py-6">
+
+    <a
+        href="https://www.instagram.com/pramit_savaliya_2708/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic whitespace-nowrap"
+    >
+        <Instagram size={16} /> Instagram
+    </a>
+
+    <div className="hidden md:block w-px h-6 bg-border/50" />
+
+    <a
+        href="https://www.linkedin.com/in/Pramit-Savaliya/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic whitespace-nowrap"
+    >
+        <Linkedin size={16} /> LinkedIn
+    </a>
+
+    <div className="hidden md:block w-px h-6 bg-border/50" />
+
+    <a
+        href="https://github.com/P2786"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors italic whitespace-nowrap"
+    >
+        <Github size={16} /> GitHub
+    </a>
+
+</BentoCard>
 
             </HomeBentoBoard>
         </div>

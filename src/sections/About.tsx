@@ -26,7 +26,7 @@ export function About() {
                             {/* The Profile Photo - The "Real" Person */}
                             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-surface border border-border shadow-2xl z-10 max-w-[400px] mx-auto lg:ml-0">
                                 <ParallaxImage
-                                    src="/profile-v2.png"
+                                    src="/profile-v2.jpg"
                                     alt="User Profile"
                                     className="w-full h-full"
                                     speed={0.1}

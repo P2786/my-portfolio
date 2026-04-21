@@ -74,13 +74,13 @@ export function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProps) {
                     </nav>
 
                     <motion.div variants={linkVariants} className="flex gap-6 mt-8">
-                        <a href="https://github.com/Abbas192006" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors">
+                        <a href="https://github.com/P2786" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors">
                             <Github size={20} />
                         </a>
-                        <a href="https://www.linkedin.com/in/abbasxcode/?skipRedirect=true" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors">
+                        <a href="https://www.linkedin.com/in/Pramit-Savaliya/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors">
                             <Linkedin size={20} />
                         </a>
-                        <a href="https://www.instagram.com/abbas_412_" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors">
+                        <a href="https://www.instagram.com/pramit_savaliya_2708" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors">
                             <Instagram size={20} />
                         </a>
                     </motion.div>

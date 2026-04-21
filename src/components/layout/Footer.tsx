@@ -6,9 +6,9 @@ export function Footer() {
                     © {new Date().getFullYear()} All rights reserved.
                 </p>
                 <div className="flex items-center gap-6">
-                    <a href="https://github.com/Abbas192006" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">GitHub</a>
-                    <a href="https://www.linkedin.com/in/abbasxcode/?skipRedirect=true" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">LinkedIn</a>
-                    <a href="https://www.instagram.com/abbas_412_/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">Instagram</a>
+                    <a href="https://github.com/P2786" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">GitHub</a>
+                    <a href="https://www.linkedin.com/in/Pramit-Savaliya/?skipRedirect=true" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">LinkedIn</a>
+                    <a href="https://www.instagram.com/pramit_savaliya_2786/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">Instagram</a>
                 </div>
             </div>
         </footer>

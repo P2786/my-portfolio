@@ -8,46 +8,46 @@ import { Button } from "@/components/ui/Button";
 
 const projects = [
     {
-        title: "AI Dashboard",
-        desc: "Real-time analytics platform powered by machine learning.",
-        tech: ["Next.js", "TypeScript", "Python"],
-        link: "#",
-        github: "#"
+        title: "ChatMitra - Chat App",
+        desc: "Real-time chat application with login/signup, image sharing, and live messaging using PHP and MySQL.",
+        tech: ["PHP", "MySQL", "JavaScript"],
+        link: "https://github.com/P2786",
+        github: "https://github.com/P2786"
     },
     {
-        title: "E-Commerce API",
-        desc: "Scalable backend architecture for high-volume retail. Optimized for performance and heavy loads.",
-        tech: ["Node.js", "GraphQL", "PostgreSQL"],
-        link: "#",
-        github: "#"
+        title: "Online Voting System",
+        desc: "Secure voting platform with authentication, vote tracking, and admin panel for managing elections.",
+        tech: ["PHP", "MySQL", "AJAX"],
+        link: "https://github.com/P2786",
+        github: "https://github.com/P2786"
     },
     {
-        title: "Portfolio v1",
-        desc: "Previous iteration of personal portfolio with WebGL.",
-        tech: ["Three.js", "React", "GSAP"],
-        link: "#",
-        github: "#"
+        title: "PrepPilot AI",
+        desc: "AI-powered interview preparation platform that analyzes user responses and provides smart feedback.",
+        tech: ["Node.js", "Express", "AI"],
+        link: "https://github.com/P2786",
+        github: "https://github.com/P2786"
     },
     {
-        title: "Social Graph",
-        desc: "Data visualization for social networks using D3.js and Neo4j.",
-        tech: ["D3.js", "Neo4j", "React"],
-        link: "#",
-        github: "#"
+        title: "InvisiCam - Detector App",
+        desc: "Android app that detects hidden cameras using flashlight, sensors, and magnetic field detection.",
+        tech: ["Kotlin", "Android", "Sensors"],
+        link: "https://github.com/P2786",
+        github: "https://github.com/P2786"
     },
     {
-        title: "Design System",
-        desc: "Comprehensive UI kit for rapid prototyping with accessibility focus.",
-        tech: ["Figma", "Storybook", "Tailwind"],
-        link: "#",
-        github: "#"
+        title: "PramitVote+ Polling App",
+        desc: "Anonymous polling web app with real-time results and interactive user voting system.",
+        tech: ["JavaScript", "Web App", "Realtime"],
+        link: "https://github.com/P2786",
+        github: "https://github.com/P2786"
     },
     {
-        title: "Weather IoV",
-        desc: "IoT-based climate monitoring dashboard with real-time visualization.",
-        tech: ["Rust", "MQTT", "Grafana"],
-        link: "#",
-        github: "#"
+        title: "Pritify - Spotify Clone",
+        desc: "Music streaming UI clone with login system, artist list, and playlist functionality.",
+        tech: ["React", "JavaScript", "UI/UX"],
+        link: "https://github.com/P2786",
+        github: "https://github.com/P2786"
     }
 ];
 

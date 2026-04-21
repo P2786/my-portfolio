@@ -10,42 +10,58 @@ import { ChevronDown, Star, Zap, Code, Terminal } from "lucide-react";
 const allSkills = [
     {
         id: "frontend",
-        cat: "Frontend Engineering",
+        cat: "Frontend Development",
         icon: <Code />,
-        desc: "Building pixel-perfect, accessible user interfaces.",
+        desc: "Modern UI development with responsive and interactive design.",
         items: [
-            { name: "React", level: "Expert", desc: "Hooks, Context, Performance tuning" },
-            { name: "Next.js", level: "Expert", desc: "App Router, SSR, Server Actions" },
-            { name: "TypeScript", level: "Expert", desc: "Strict typing, Generics, Utility types" },
-            { name: "Tailwind CSS", level: "Expert", desc: "Design systems, Animations, v4 Config" },
-            { name: "Framer Motion", level: "Advanced", desc: "Complex gestures, Shared Layout animations" },
-            { name: "Three.js", level: "Intermediate", desc: "R3F, Shaders, WebGL performance" }
+            { name: "HTML5", level: "Expert", desc: "Semantic structure, forms, accessibility" },
+            { name: "CSS3", level: "Advanced", desc: "Flexbox, Grid, animations, responsive design" },
+            { name: "JavaScript", level: "Advanced", desc: "DOM, events, async/await, ES6+" },
+            { name: "React", level: "Advanced", desc: "Components, hooks, state management" },
+            { name: "Next.js", level: "Intermediate", desc: "Routing, SSR basics, project structure" },
+            { name: "Tailwind CSS", level: "Advanced", desc: "Utility-first UI, responsive layouts" }
         ]
     },
     {
         id: "backend",
-        cat: "Backend & Cloud",
+        cat: "Backend Development",
         icon: <Terminal />,
-        desc: "Scalable server-side logic and database architecture.",
+        desc: "Server-side logic, APIs, and database management.",
         items: [
-            { name: "Node.js", level: "Advanced", desc: "REST APIs, Microservices, Event Loop" },
-            { name: "PostgreSQL", level: "Advanced", desc: "Complex queries, Indexing, Prisma" },
-            { name: "GraphQL", level: "Intermediate", desc: "Apollo Server, Schema design" },
-            { name: "AWS", level: "Intermediate", desc: "S3, Lambda, EC2 basics" },
-            { name: "Docker", level: "Intermediate", desc: "Containerization, Compose, Multi-stage builds" }
+            { name: "Node.js", level: "Intermediate", desc: "Basic APIs, routing, backend logic" },
+            { name: "Express.js", level: "Intermediate", desc: "REST APIs, middleware" },
+            { name: "PHP", level: "Advanced", desc: "CRUD operations, sessions, authentication" },
+            { name: "MySQL", level: "Advanced", desc: "Database design, queries, joins" },
+            { name: "Firebase", level: "Intermediate", desc: "Authentication, realtime database" },
+            { name: "AJAX", level: "Advanced", desc: "Async data fetching without reload" }
         ]
     },
     {
-        id: "design",
-        cat: "Design & Creative",
+        id: "mobile",
+        cat: "Android Development",
         icon: <Zap />,
-        desc: "Bridging the gap between design and engineering.",
+        desc: "Building mobile apps using native Android technologies.",
         items: [
-            { name: "Figma", level: "Advanced", desc: "Auto-layout, Components, Prototyping" },
-            { name: "Blender", level: "Intermediate", desc: "3D Modeling, Texturing, Lighting" },
-            { name: "UI/UX", level: "Advanced", desc: "Accessibility (a11y), User Flows" }
+            { name: "Java", level: "Intermediate", desc: "Android app logic and UI handling" },
+            { name: "Android Studio", level: "Advanced", desc: "UI design, activities, debugging" },
+            { name: "SQLite", level: "Intermediate", desc: "Local database storage in apps" },
+            { name: "Sensors & Features", level: "Intermediate", desc: "Camera, Bluetooth, flashlight (InvisiCam)" }
         ]
     },
+    {
+        id: "tools",
+        cat: "Tools & Technologies",
+        icon: <Star />,
+        desc: "Development tools and workflow management.",
+        items: [
+            { name: "Git & GitHub", level: "Advanced", desc: "Version control, repositories" },
+            { name: "Postman", level: "Advanced", desc: "API testing and debugging" },
+            { name: "XAMPP", level: "Advanced", desc: "Local server setup for PHP/MySQL" },
+            { name: "Netlify", level: "Intermediate", desc: "Frontend deployment" },
+            { name: "Vercel", level: "Intermediate", desc: "Next.js deployment" },
+            { name: "Figma", level: "Intermediate", desc: "UI/UX design and prototyping" }
+        ]
+    }
 ];
 
 export default function SkillsPage() {
