@@ -80,9 +80,12 @@ export default function AboutPage() {
                         <Reveal>
                             <div className="flex flex-wrap gap-4">
                                 
-                                <Button size="lg">
-                                    <Download className="mr-2 w-4 h-4" /> Download Resume
-                                </Button>
+                                <a href="/pramit-savaliya-cv.pdf" download="Pramit_Savaliya_Resume.pdf">
+                                    <Button size="lg">
+                                        <Download className="mr-2 w-4 h-4" />
+                                        Download Resume
+                                    </Button>
+                                </a>
 
                                 <Link href="/contact">
                                     <Button size="lg" variant="outline">
