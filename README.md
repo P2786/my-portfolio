@@ -2,8 +2,8 @@
 
 A premium, interactive developer portfolio built using modern web technologies like Next.js, Tailwind CSS, Framer Motion, and Three.js.
 
-# 🌐 Live Demo: https://pramit-savaliya.vercel.app/
-# 📂 GitHub: https://github.com/P2786/my-portfolio  
+🌐 Live Demo: https://pramit-savaliya.vercel.app/
+📂 GitHub: https://github.com/P2786/my-portfolio  
 
 ---
 
@@ -49,7 +49,7 @@ A premium, interactive developer portfolio built using modern web technologies l
 
 ---
 
-## 📦 Installation
+### 📦 Installation
 
 Clone repo:
 
@@ -69,14 +69,14 @@ Open browser:
 ```bash
 http://localhost:3000
 ```
-## 🚀 Deployment
-# ✅ Vercel (Recommended)
+### 🚀 Deployment
+✅ Vercel (Recommended)
 Go to https://vercel.com
 Login with GitHub
 Import repo → my-portfolio
 Click Deploy
 
-# 🌐 Netlify (Alternative)
+🌐 Netlify (Alternative)
 Build Command:
 ```bash
 npm run build
@@ -84,7 +84,7 @@ npm run build
 Publish Directory:
 .next
 
-## 📁 Project Structure
+### 📁 Project Structure
 ```bash
 src/
 ├── app/              # Routes & Layouts
@@ -94,21 +94,21 @@ src/
 ├── sections/         # Hero, About, Projects
 └── styles/           # Global styles
 ```
-## 📬 Contact
+### 📬 Contact
 
 If you want to collaborate or have any queries:
 
-# 📧 Email: pramit.savaliya2786@gmail.com
+📧 Email: pramit.savaliya2786@gmail.com
 
-# 🔗 LinkedIn: https://www.linkedin.com/in/Pramit-Savaliya/
+🔗 LinkedIn: https://www.linkedin.com/in/Pramit-Savaliya/
 
-# 💻 GitHub: https://github.com/P2786
+💻 GitHub: https://github.com/P2786
 
-# ⭐ Support
+⭐ Support
 
 If you like this project, give it a ⭐ on GitHub!
 
-# 👨‍💻 Author
+👨‍💻 Author
 
-## Pramit Savaliya
+### Pramit Savaliya
 Frontend Developer | Full Stack Learner 🚀
