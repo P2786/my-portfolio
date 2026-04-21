@@ -1,84 +1,113 @@
-# High-End Animated Portfolio
+# 🚀 Pramit Savaliya – High-End Animated Portfolio
 
-A premium, interactive developer portfolio built with Next.js, Tailwind CSS, Framer Motion, and Three.js.
+A premium, interactive developer portfolio built using modern web technologies like Next.js, Tailwind CSS, Framer Motion, and Three.js.
 
-## 🚀 Features
+🌐 Live Demo: https://your-vercel-link.vercel.app  
+📂 GitHub: https://github.com/P2786/my-portfolio  
 
-- **Smooth Animations**:
-  - Global Page Transitions (Framer Motion)
-  - Scroll-triggered reveals
-  - Staggered text effects
-  - Smooth Scroll (Lenis)
-- **Interactive Visuals**:
-  - 3D Floating Geometry (React Three Fiber)
-  - Particle Background (tsParticles)
-  - Custom fluid cursor
-- **Responsive Design**:
-  - Fully optimized for Mobile, Tablet, and Desktop
-  - Custom Mobile Navigation Menu
-  - Adaptive Grid Layouts (Bento Board)
-- **Advanced Theme System**:
-  - 30+ Custom Themes (Light & Dark modes)
-  - Responsive Theme Switcher
-  - Persistent theme preferences
-- **Modern UI/UX**:
-  - Dark Mode aesthetic (Obsidian/Neon)
-  - Glassmorphism effects
-  - Responsive layouts (Grid/Flex)
-  - Custom Splash Screen Loader
+---
+
+## ✨ Features
+
+### 🎬 Smooth Animations
+- Page transitions using Framer Motion
+- Scroll-based reveal animations
+- Staggered text effects
+- Smooth scrolling with Lenis
+
+### 🌌 Interactive Visuals
+- 3D floating objects (Three.js + React Three Fiber)
+- Particle background effects
+- Custom animated cursor
+
+### 📱 Fully Responsive
+- Mobile, Tablet & Desktop optimized
+- Adaptive Bento Grid layout
+- Custom mobile navigation
+
+### 🎨 Advanced Theme System
+- 30+ themes (Dark + Light)
+- Theme switcher UI
+- Saved user preferences
+
+### 💎 Modern UI/UX
+- Glassmorphism effects
+- Neon/Dark aesthetic
+- Smooth transitions & micro-interactions
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15 (App Router)
-- **Styling**: Tailwind CSS v4
-- **Motion**: Framer Motion, GSAP, Lenis
-- **3D**: Three.js, React Three Fiber, Drei
-- **Particles**: tsparticles
-- **Icons**: Lucide React
-- **Fonts**: Inter & Space Grotesk
+- ⚡ Framework: Next.js 15 (App Router)
+- 🎨 Styling: Tailwind CSS v4
+- 🎥 Animations: Framer Motion, GSAP, Lenis
+- 🌐 3D: Three.js, React Three Fiber, Drei
+- ✨ Particles: tsParticles
+- 🎯 Icons: Lucide React
+- 🔤 Fonts: Inter, Space Grotesk
+
+---
 
 ## 📦 Installation
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/portfolio-web.git
-    cd portfolio-web
-    ```
+Clone repo:
 
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
+```bash
+git clone https://github.com/P2786/my-portfolio.git
+cd my-portfolio
+```
+Install dependencies:
+```bash
+npm install
+```
+Run project:
+```bash
+npm run dev
+```
+Open browser:
+```bash
+http://localhost:3000
+```
+## 🚀 Deployment
+# ✅ Vercel (Recommended)
+Go to https://vercel.com
+Login with GitHub
+Import repo → my-portfolio
+Click Deploy
 
-3.  Run the development server:
-    ```bash
-    npm run dev
-    ```
-
-4.  Open [http://localhost:3000](http://localhost:3000) with your browser.
-
-## 🚢 Deployment
-
-The project is optimized for deployment on **Netlify** or **Vercel**.
-
-### Netlify Deployment
-1.  Connect your GitHub repository to Netlify.
-2.  Set Build Command: `npm run build`
-3.  Set Publish Directory: `.next` (or let Netlify auto-detect Next.js)
+# 🌐 Netlify (Alternative)
+Build Command:
+```bash
+npm run build
+```
+Publish Directory:
+.next
 
 ## 📁 Project Structure
-
-```
 src/
-├── app/              # Next.js Routes & Layouts
+├── app/              # Routes & Layouts
 ├── components/       
 │   ├── layout/       # Navbar, Footer
-│   └── ui/           # Reusable UI (Buttons, Reveal, Scene3D)
-├── sections/         # Page Sections (Hero, About, Projects...)
-└── styles/           # Global CSS
-```
+│   └── ui/           # Reusable UI
+├── sections/         # Hero, About, Projects
+└── styles/           # Global styles
 
-## 🎨 Customization
+## 📬 Contact
 
-- **Colors**: Edit `tailwind.config.ts` to change primary/secondary accents.
-- **Content**: Update section files in `src/sections/` with your own data.
+If you want to collaborate or have any queries:
+
+# 📧 Email: pramit.savaliya2786@gmail.com
+
+# 🔗 LinkedIn: https://www.linkedin.com/in/Pramit-Savaliya/
+
+# 💻 GitHub: https://github.com/P2786
+
+# ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+# 👨‍💻 Author
+
+## Pramit Savaliya
+Frontend Developer | Full Stack Learner 🚀
