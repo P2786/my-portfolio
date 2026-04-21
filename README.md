@@ -2,8 +2,8 @@
 
 A premium, interactive developer portfolio built using modern web technologies like Next.js, Tailwind CSS, Framer Motion, and Three.js.
 
-🌐 Live Demo: https://pramit-savaliya.vercel.app/
-📂 GitHub: https://github.com/P2786/my-portfolio  
+# 🌐 Live Demo: https://pramit-savaliya.vercel.app/
+# 📂 GitHub: https://github.com/P2786/my-portfolio  
 
 ---
 
