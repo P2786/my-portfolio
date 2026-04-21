@@ -85,6 +85,7 @@ Publish Directory:
 .next
 
 ## 📁 Project Structure
+```bash
 src/
 ├── app/              # Routes & Layouts
 ├── components/       
@@ -92,7 +93,7 @@ src/
 │   └── ui/           # Reusable UI
 ├── sections/         # Hero, About, Projects
 └── styles/           # Global styles
-
+```
 ## 📬 Contact
 
 If you want to collaborate or have any queries:
